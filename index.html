@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inheritance</title>
+
+        <script>
+
+            //we can write JS code before the closing of head tag
+        </script>
+    </head>
+    <body>
+
+        <script>    
+            class MyClassA{ // class name should be in PascalCase
+                // member1
+
+                // member2
+
+                // member3 methods
+                /*
+                methodName(){
+
+                }
+                */
+                addition(x,y){
+                    //every function return something
+                    return(x+y)
+                }
+            }
+            let obja = new MyClassA()
+            let rslta = obja.addition(5,5)
+            console.log(rslta)
+
+            class MyClassB extends MyClassA{
+                //member1
+
+                //member2
+
+                // member3 methods
+                substraction(x,y){
+                    return(x-y)
+                }
+            }
+            let objb = new MyClassB();
+            let rsltb = objb.substraction(50,20)
+            console.log(rsltb)
+            document.write(obja.addition(10,10));
+            document.write("<br> </br>");
+
+            class MyClassC extends MyClassB{
+                multiplication(x,y){
+                    return (x*y)
+                }
+            }
+            let objc = new MyClassC();
+            console.log(objc.multiplication(8,8));
+
+            class MyClassD extends MyClassC{
+                division(x,y){
+                    return(x/y)
+                }
+            }
+            let objd = new MyClassD();
+            let rsltd =objd.division(80,4);
+            document.write(rsltd);
+
+
+
+
+            //we can write JS code before the closing of body tag
+        </script>
+    </body>
+</html>
